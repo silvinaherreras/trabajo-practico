@@ -26,6 +26,10 @@ creada en el otro archivo."""
     return input("ingreses nombre ")
 def ej():
     aux=5%2==0
+    aux2="hola"
+    aux3=str.__contains__(aux2,"a")
     print(aux)
+    print(aux3)
+    
 
 ej()
