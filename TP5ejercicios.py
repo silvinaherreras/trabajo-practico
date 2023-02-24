@@ -30,6 +30,6 @@ def ej():
     aux3=str.__contains__(aux2,"a")
     print(aux)
     print(aux3)
-    
+    print(aux2.capitalize())
 
 ej()
