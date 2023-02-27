@@ -37,6 +37,48 @@ def imprimirInscriptos(inscriptos,datos_personales):
     for posicion,legajo in enumerate( inscriptos):
         print(posicion,legajo,datos_personales[posicion])
 
+
+
+def ej():
+    aux = 5 % 2 == 0
+    aux2 = "hola"
+    aux3 = str.__contains__(aux2, "a")
+    aux0 = "a"
+    print("si ", aux2 in aux0)
+    print(aux2.capitalize())
+    d = "@Una@cadena@con@arrobas"
+    aux4 = d.split("@")
+    print(aux4)
+    aux5 = "&".join(aux4)
+    print(aux4)
+    print(aux5)
+    ejlstrip = "siiiilvina hola probando"
+    aux6 = ejlstrip.lstrip("si")
+    print(aux6)
+    string = "++++x...y!!z* geeksforgeeks"
+    # Removes given set of characters from left.
+    print(string.lstrip("+.!*xyz"))
+# ej()
+
+
+def ejercicio_web():
+    # Create a sample collection
+    users = {'Hans': 'active', 'Éléonore': 'inactive', '景太郎': 'active'}
+
+    # Strategy:  Iterate over a copy
+    for user, status in users.copy().items():
+        if status == 'inactive':
+            del users[user]
+
+    # Strategy:  Create a new collection
+    active_users = {}
+    for user, status in users.items():
+        if status == 'active':
+            active_users[user] = status
+
+    print (active_users)
+ejercicio_web()
+
 def main():
     legajos,datos_personales=Problema81()
     print("La lista de inscriptos es:",legajos)
