@@ -60,7 +60,31 @@ libre (es decir, puede rendir un final extendido o recursar)."""
     except Exception as err:
         print(f"Unexpected {err=}, {type(err)=}")
 
-ejercicio6()
+#ejercicio6()
+
+def ejercicio7():
+    """7. Cree un script que determine si un triángulo es isósceles, equilátero, o
+escaleno. Para determinar esto, se le solicitará al usuario ingresar tres
+números, correspondientes a los tres lados del triángulo.
+equilátero = todos los lados iguales
+isósceles = dos lados iguales
+escaleno = todos los lados diferentes"""
+
+try:
+        lado1=float(input("Ingrese lado 1"))
+        lado2=float(input("Ingrese lado2"))
+        lado3=float(input("Ingrese lado 3"))
+        
+        if (lado1==lado2) and (lado1==lado3):
+             print("equilátero")
+        elif ((lado1==lado2) and ((lado1!=lado3))) or ((lado1!=lado2) and ((lado1==lado3))) :
+           print("isósceles")
+        else:
+            print("escaleno")
+except Exception as err:
+        print(f"Unexpected {err=}, {type(err)=}")
+
+
    
 
 
